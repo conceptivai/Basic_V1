@@ -22,7 +22,7 @@ app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=10)
 Session(app)
 
 # Get OpenAI API key from environment variables
-openai_api_key = OPEN_AI_KEY
+openai_api_key = "os.getenv("OPENAI_API_KEY")"
 
 # Check if the API key is present
 if not openai_api_key:
